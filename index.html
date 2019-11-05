@@ -143,7 +143,7 @@
             </li>
           </ul>
         </div>
-        <div class="services-item second-row">
+        <div class="services-item">
           <h3>Эксплуатация и сервисное обслуживание</h3>
           <ul class="services-list">
             <li>
@@ -166,7 +166,7 @@
             </li>
           </ul>
         </div>
-        <div class="services-item second-row">
+        <div class="services-item">
           <h3>Электролаборатория</h3>
           <ul class="services-list">
             <li>
@@ -192,7 +192,7 @@
             </li>
           </ul>
         </div>
-        <div class="services-item second-row">
+        <div class="services-item">
           <h3>Услуги по технологическому присоединению</h3>
           <ul class="services-list">
             <li>
@@ -216,7 +216,7 @@
     </section>
     <section class="montstroy-section projects container">
       <h2>Проекты</h2>
-      <ul class="projects-wrapper-top">
+      <ul class="projects-row">
         <li class="projects-item futur">
           <h3>Стадион &laquo;Футур&raquo;</h3>
           <p>В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
@@ -246,7 +246,7 @@
           </button>
         </li>
       </ul>
-      <ul class="projects-wrapper-bottom">
+      <ul class="projects-row">
         <li class="projects-item energonatskompani">
           <h3>ОАО &laquo;ЭнергоНацКомпани&raquo;</h3>
           <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО &laquo;ЭнергоНацКомпани&raquo;</p>
@@ -268,16 +268,16 @@
       <div class="partners-slider">
         <ul class="partners-wrapper">
           <li class="partners-item">
-            <img class="ava-company" src="img/аva-company.png" width="175" height="127" alt="Логотип компании &laquo;Ava company&raquo;">
+            <img class="ava-company" src="img/аva-company.png" width="270" height="135" alt="Логотип компании &laquo;Ava company&raquo;">
           </li>
           <li class="partners-item">
-            <img class="mirror" src="img/mirror.png" width="167" height="121" alt="Логотип бизнес центра  &laquo;Mirror&raquo;">
+            <img class="mirror" src="img/mirror.png" width="270" height="135" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
           </li>
           <li class="partners-item">
-            <img class="shield" src="img/shield.png" width="211" height="135" alt="Логотип охранного предприятия  &laquo;Shield&raquo;">
+            <img class="shield" src="img/shield.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
           </li>
           <li class="partners-item">
-            <img class="teplodom" src="img/teplodom.png" width="173" height="135" alt="Логотип охранного предприятия  &laquo;Shield&raquo;">
+            <img class="teplodom" src="img/teplodom.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
           </li>
         </ul>
         <button type="button" class="partner-back">
@@ -289,5 +289,65 @@
       </div>
     </section>
   </main>
+  <footer>
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.308880551201!2d37.61589741538956!3d55.631440480521036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572878912391!5m2!1sru!2sru" width="1922" height="807" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <p>
+        <img src="img/map.png" width="1922" height="807" alt="Офис компании &laquo;МонтСтрой&raquo; по адресу Варшавское шоссе, д, 118, к.1 Бизнес-центр  &laquo;ВАРШАВКА Sky&raquo;">
+      </p>
+    </section>
+    <section class="write-us">
+      <div class="wrapper-write">
+        <h2>Свяжитесь с нами</h2>
+        <form class="write" action="https://echo.htmlacademy.ru" method="post">
+          <div class="user-data">
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+          </div>
+          <label for="e-mail">E-mail:</label>
+          <input type="email" name="email" id="e-mail" required>
+          <label class="letter" for="letter">Сообщение</label>
+          <textarea name="letter" id="letter" required></textarea>
+          <p>Заполняя форму на сайте, вы соглашаетесь с нашей<br>
+             Политикой конфиденциальности
+          </p>
+          <button class="button-write" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section class="footer-contacts">
+      <div class="contacts-wrapper container">
+        <div class="contacts-column">
+          <a class="logo">
+            <img class="footer-logo" src="img/logo.png" width="141" height="60" alt="Логотип компании строительно-монтажных работ &laquo;МонтСтрой&raquo;">
+          </a>
+          <p class="name">ЗАО &laquo;НCП &laquo;МонтCтрой&raquo;</p>
+          <ul class="footer-social">
+            <li><a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button social-button-tw" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          </ul>
+        </div>
+        <div class="contacts-column">
+          <p class="footer-address">Варшавское шоссе,<br>
+          д, 118, к.1 Бизнес-центр<br>
+          &laquo;ВАРШАВКА Sky&raquo;</p>
+          <p class="footer-email">zao@montstroy.ru</p>
+          <p class="footer-phone">
+            <a class="phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
+            <span class="work-time">Ежедневно с 9:00 до 18:00</span>
+          </p>
+        </div>
+      </div>
+      <p class="footer-copyright">1992-2018 &copy; ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+    </section>
+  </footer>
 </body>
 </html>
