@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/Roboto-Medium.eot');
-	src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
+	src: local('☺'), url("../fonts/Roboto-Medium.woff2") format("woff2"), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/Roboto-Regular.eot');
-	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+	src: local('☺'), url("../fonts/Roboto-Regular.woff2") format("woff2"), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/Roboto-Bold.eot');
-	src: local('☺'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg') format('svg');
+	src: local('☺'), url("../fonts/Roboto-Bold.woff2") format("woff2"), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
 	font-family: 'Roboto-Black';
 	src: url('../fonts/Roboto-Black.eot');
-	src: local('☺'), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype'), url('../fonts/Roboto-Black.svg') format('svg');
+	src: local('☺'), url("../fonts/Roboto-Black.woff2") format("woff2"), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype'), url('../fonts/Roboto-Black.svg') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -33,7 +33,7 @@
 @font-face {
 	font-family: 'Raleway-Black';
 	src: url('../fonts/Raleway-Black.eot');
-	src: local('☺'), url('../fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black.ttf') format('truetype'), url('../fonts/Raleway-Black.svg') format('svg');
+	src: local('☺'), url("../fonts/Raleway-Black.woff2") format("woff2"), url('../fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black.ttf') format('truetype'), url('../fonts/Raleway-Black.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -41,7 +41,7 @@
 @font-face {
 	font-family: 'Raleway';
 	src: url('fonts/Raleway-Bold.eot');
-	src: local('☺'), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
+	src: local('☺'), url("../fonts/Raleway-Bold.woff2") format("woff2"), url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf') format('truetype'), url('../fonts/Raleway-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -49,7 +49,7 @@
 @font-face {
 	font-family: 'Circe';
 	src: url('fonts/Circle-Regular.eot');
-	src: local('☺'), url('../fonts/Circle-Regular.woff') format('woff'), url('../fonts/Circle-Regular.ttf') format('truetype'), url('../fonts/Circle-Regular.svg') format('svg');
+  src: local('☺'), url("../fonts/Circle-Regular.woff2") format("woff2"), url('../fonts/Circle-Regular.woff') format('woff'), url('../fonts/Circle-Regular.ttf') format('truetype'), url('../fonts/Circle-Regular.svg') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -111,7 +111,7 @@ input[type="radio"].visually-hidden {
 	padding: 14px;
 
 	color: #ffffff;
-	font-family: 'Roboto - Black', Arial, sans-serif;
+	font-family: 'Roboto-Black', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.3;
@@ -356,6 +356,10 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.button-indicator {
+	display: none;
+}
+
 .services-list a:hover,
 .services-list a:focus {
 	text-decoration: underline;
@@ -418,6 +422,10 @@ input[type="radio"].visually-hidden {
 .services-item a {
 	color: #333333;
 	opacity: 0.77;
+}
+
+.services-item-tablet {
+	display: none;
 }
 
 .projects h3 {
@@ -711,7 +719,6 @@ input[type="radio"].visually-hidden {
 	background: url(../img/marker.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .map p {
@@ -763,6 +770,7 @@ input[type="radio"].visually-hidden {
 }
 
 .write label {
+	position: relative;
   display: block;
   margin: 0;
   padding: 0;
@@ -784,20 +792,14 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us .letter {
-	padding-top: 22px;
-}
-
-.write-us textarea {
-  width: 100%;
-  min-height: 10px;
-	resize: none;
-	overflow: auto;
+	padding-top: 24px;
 }
 
 .write-us p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 37px;
+	margin-top: 16px;
+	margin-bottom: 38px;
 
 	color: #000000;
 	font-size: 12px;
@@ -806,16 +808,38 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
-.write-us input,
-.write-us textarea {
+.write-us input {
 	box-sizing: border-box;
 	padding: 7px;
 	border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.write-us input:nth-child(3n) {
+.write-us label::before {
+	position: absolute;
+  content: "";
+  top: 66px;
+  left: 0;
+  width: 178px;
+  border:  1px solid rgba(0, 0, 0, 0.2);
+}
+
+.write-us input:nth-child(3n),
+.write-us input:nth-child(5n){
 	width: 100%;
+}
+
+.write-us .e-mail::before,
+.write-us .letter::before {
+	width: 400px;
+	left: 0;
+}
+
+.write-us .e-mail::before {
+	top: 68px;
+}
+
+.write-us .letter::before {
+	top: 92px;
 }
 
 .write-us .button-write {
@@ -1012,8 +1036,21 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
 
+	body {
+		width: 768px;
+		background-color: #fefdff;
+	}
+
 	.container {
-		width: 640px;
+		width: 724px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.button {
+    min-width: 290px;
+    font-size: 16px;
+    line-height: 26px;
 	}
 
 	.main-header {
@@ -1029,6 +1066,7 @@ input[type="radio"].visually-hidden {
 	.main-header .logo {
 		padding: 0;
 		padding-right: 31px;
+		padding-left: 42px;
 		width: 86px;
 		height: 37px;
 	}
@@ -1115,6 +1153,204 @@ input[type="radio"].visually-hidden {
 
 	.main-header .feedback {
 		display: none;
+	}
+
+	.about-us {
+		width: 768px;
+    background-color: #0b1223;
+    background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/bg-tablet.jpg);
+		background-position: 50% 0%;
+    padding-top: 125px;
+		padding-bottom: 0;
+		margin: 0 auto;
+	}
+
+	.about-us .main-heading {
+  	padding-bottom: 15px;
+		padding-left: 62px;
+
+		font-size: 38px;
+		letter-spacing: 1.9px;
+		line-height: normal;
+	}
+
+	.about-us .main-pharagraph {
+		width: 588px;
+		margin-bottom: 79px;
+		padding-left: 62px;
+
+		color: #fffffe;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.buttons-wrapper {
+    min-width: 620px;
+		padding-left: 62px;
+    margin-right: auto;
+    margin-bottom: 130px;
+	}
+
+	.advantages {
+		position: relative;
+		color: #000000;
+		font-size: 14px;
+	}
+
+	.container-advantages {
+		min-width: 768px;
+		box-sizing: border-box;
+		padding: 0;
+		padding-top: 69px;
+		padding-right: 26px;
+		padding-left: 26px;
+		padding-bottom: 46px;
+		background-color: #fefdff;
+	}
+
+	.advantages p {
+		padding: 0;
+		margin: 0;
+		width: 152px;
+		padding-top: 95px;
+		margin: 0 auto;
+	}
+
+	.manufacture p {
+		width: 185px;
+	}
+
+	.advantages div {
+		position: relative;
+		width: 230px;
+		min-height: 163px;
+		box-sizing: border-box;
+
+		opacity: 0.7;
+		color: #000000;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 16.26px;
+
+		box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
+		background-color: #ffffff;
+	}
+
+	.advantages .advantages-current {
+		position: absolute;
+		z-index: 3;
+		top: -20px;
+		left: 217px;
+		width: 280px;
+		min-height: 200px;
+		color: #000000;
+
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.advantages-current p {
+		padding-top: 118px;
+	}
+
+	.advantages .quality::before {
+		position: absolute;
+		content: "";
+		top: 23px;
+		left: 84px;
+		width: 62px;
+		height: 64px;
+		background-image: url(../img/like-tablet.png);
+	}
+
+	.advantages .performan::before {
+		position: absolute;
+		content: "";
+		top: 49px;
+		left: 95px;
+		width: 89px;
+		height: 59px;
+		background-image: url(../img/handshake-tablet.png);
+	}
+
+	.advantages .manufacture::before {
+		position: absolute;
+		content: "";
+		top: 21px;
+    left: 81px;
+		width: 70px;
+		height: 69px;
+		background-image: url(../img/settings-tablet.png);
+	}
+
+	.button-indicator {
+		display: flex;
+		position: absolute;
+    padding: 0;
+    top: 187px;
+    left: 343px;
+    width: 8px;
+    height: 8px;
+    background-color: #d6d6d6;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+	}
+
+	.button-indicator-2 {
+		left: 356px;
+	}
+
+	.button-indicator-active {
+		background-color: #00ffd7;
+	}
+
+	.button-indicator-3 {
+		left: 368px;
+		background-color: #dddddd;
+	}
+
+	.montstroy-section h2 {
+		font-size: 26px;
+		font-weight: 400;
+		letter-spacing: 1.04px;
+	}
+
+	.montstroy-section::before {
+		display: none;
+	}
+
+	.services-item {
+		display: none;
+	}
+
+	.services-item-tablet {
+		display: block;
+		padding: 0;
+		margin: 0;
+		width: 352px;
+	}
+
+	.services-item-tablet form {
+		width: 352px;
+	}
+
+	.services-item-tablet select {
+		width: 352px;
+	}
+
+	.services-item-tablet option {
+		display: block;
+		width: 352px;
+		box-sizing: border-box;
+		color: #000000;
+		font-size: 14px;
+		line-height: 26px;
+		background-color: #f4f4f4;
+		padding-top: 18px;
+		padding-left: 21px;
+		padding-bottom: 16px;
 	}
 }
 

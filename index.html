@@ -42,19 +42,21 @@
       <div class="container">
         <h1 class="main-heading">Cтроительно-монтажные работы</h1>
         <p class="main-pharagraph">
-          Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="foundation-year">1992</span> года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по электроснабжению зданий и сооружений.
+          Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<span class="foundation-year">1992</span> года, и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и пуско-наладочных работ по&nbsp;электроснабжению зданий и сооружений.
         </p>
         <div class="buttons-wrapper">
           <a class="button button-service" href="#services">Наши услуги</a>
           <a class="button button-form" href="#form">Связаться с нами</a>
         </div>
+      </div>
+      <div class="container container-advantages">
         <div class="advantages">
           <div class="quality">
             <p>
               Гарантированное высокое качество продукции
             </p>
           </div>
-          <div class="performan">
+          <div class="performan advantages-current">
             <p>
               Исполнение всех сроков&nbsp;и&nbsp;обязательств
             </p>
@@ -64,6 +66,15 @@
               Собственная производственная база
             </p>
           </div>
+          <button type="button" class="button-indicator button-indicator-1">
+            <span class="visually-hidden">Слайд 1</span>
+          </button>
+          <button type="button" class="button-indicator button-indicator-2 button-indicator-active">
+            <span class="visually-hidden">Слайд 2</span>
+          </button>
+          <button type="button" class="button-indicator button-indicator-3">
+            <span class="visually-hidden">Слайд 3</span>
+          </button>
         </div>
       </div>
     </section>
@@ -215,6 +226,20 @@
           </ul>
         </div>
       </div>
+
+      <div class="services-item services-item-tablet">
+        <form action="select1.php" method="post">
+          <select name="engineering" onchange="top.location=this.value">
+            <option value="engineering">Проектирование</option>
+            <option value="concept">Предварительная разработка концепции</option>
+            <option value="energy-supply">Установка систем энергоснабжения</option>
+            <option value="document-engineering">Оформление задания на проектирование</option>
+            <option value="document">Разработка всей рабочей и проектной документации</option>
+            <option value="state">Окончательное согласование проекта энергоснабжения в органах гос.надзора</option>
+            <option value="monitoring">Обеспечение авторского надзора на протяжении всего строительства</option>
+          </select>
+        </form>
+      </div>
     </section>
     <section class="montstroy-section projects container">
       <h2>Проекты</h2>
@@ -294,9 +319,9 @@
   <footer>
     <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.308880551201!2d37.61589741538956!3d55.631440480521036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572878912391!5m2!1sru!2sru" width="1922" height="807" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.308880551201!2d37.61589741538956!3d55.631440480521036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1572878912391!5m2!1sru!2sru" width="100%" height="807" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       <p>
-        <img src="img/map.png" width="1922" height="807" alt="Офис компании &laquo;МонтСтрой&raquo; по адресу Варшавское шоссе, д, 118, к.1 Бизнес-центр  &laquo;ВАРШАВКА Sky&raquo;">
+        <img src="img/map.png" width="100%" height="807" alt="Офис компании &laquo;МонтСтрой&raquo; по адресу Варшавское шоссе, д, 118, к.1 Бизнес-центр  &laquo;ВАРШАВКА Sky&raquo;">
       </p>
     </section>
     <section class="write-us">
@@ -313,10 +338,10 @@
               <input type="tel" name="phone" id="phone" required>
             </div>
           </div>
-          <label for="e-mail">E-mail:</label>
+          <label class="e-mail" for="e-mail">E-mail:</label>
           <input type="email" name="email" id="e-mail" required>
           <label class="letter" for="letter">Сообщение</label>
-          <textarea name="letter" id="letter" required></textarea>
+          <input type="text" name="letter" id="letter" required>
           <p>Заполняя форму на сайте, вы соглашаетесь с нашей<br>
              Политикой конфиденциальности
           </p>
