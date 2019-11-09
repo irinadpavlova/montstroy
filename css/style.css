@@ -682,6 +682,14 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+.partners-wrapper-tablet {
+	display: none;
+}
+
+.partners-header-tablet {
+	display: none;
+}
+
 .partners .partner-next:hover,
 .partners .partner-back:hover,
 .partners .partner-next:focus,
@@ -1284,7 +1292,7 @@ input[type="radio"].visually-hidden {
 		background-image: url(../img/settings-tablet.png);
 	}
 
-	.button-indicator {
+	.advantages .button-indicator {
 		display: flex;
 		position: absolute;
     padding: 0;
@@ -1298,15 +1306,15 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 	}
 
-	.button-indicator-2 {
+	.advantages .button-indicator-2 {
 		left: 356px;
 	}
 
-	.button-indicator-active {
+	.advantages .button-indicator-active {
 		background-color: #00ffd7;
 	}
 
-	.button-indicator-3 {
+	.advantages .button-indicator-3 {
 		left: 368px;
 		background-color: #dddddd;
 	}
@@ -1330,6 +1338,8 @@ input[type="radio"].visually-hidden {
 		padding: 0;
 		margin: 0;
 		width: 352px;
+		height: 376px;
+		box-sizing: border-box;
 	}
 
 	.services-item-tablet form {
@@ -1352,7 +1362,194 @@ input[type="radio"].visually-hidden {
 		padding-left: 21px;
 		padding-bottom: 16px;
 	}
-}
+
+	.projects .projects-row {
+		flex-direction: column;
+	}
+
+	.projects .projects-item {
+		width: 100%;
+		min-height: 180px;
+		box-sizing: border-box;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		padding: 0;
+		margin: 0;
+		padding-top: 43px;
+		padding-right: 100px;
+		padding-bottom: 10px;
+		padding-left: 45px;
+		margin-bottom: 10px;
+	}
+
+	.projects p {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.projects-row:nth-child(3) .projects-item {
+    width: 100%;
+		padding-top: 31px;
+		padding-right: 60px;
+		padding-bottom: 10px;
+		padding-left: 45px;
+	}
+
+	.projects .futur {
+    background-image: url('../img/futur-tablet.png');
+	}
+
+	.projects .oreol {
+		background-image: url('../img/oreol-tablet.png');
+	}
+
+	.projects .semeynyi {
+		background-image: url('../img/semeynyi-tablet.png');
+	}
+
+	.projects .medial {
+		position: relative;
+		background-color: #292929;
+		background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial-tablet.png');
+	}
+
+	.projects .energonatskompani {
+		background-color: #000000;
+		background-image: url('../img/energonatscompani-tablet.png');
+	}
+
+	.projects .buratino {
+		background-color: #000000;
+		background-image: url('../img/buratino-tablet.png');
+	}
+
+	.projects h2 {
+    margin-bottom: 13px;
+	}
+
+	.projects h3 {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+
+	.projects .semeynyi,
+	.projects .medial {
+		padding-top: 35px;
+		padding-right: 207px;
+	}
+
+	.tablet-none {
+		display: none;
+	}
+
+	.projects-row:nth-child(3) h3 {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 6px;
+	}
+
+	.projects .next {
+		display: none;
+	}
+
+	.partners-header-desktop {
+		display: none;
+	}
+
+	.partners .partners-header-tablet {
+		display: block;
+		padding: 0;
+		margin: 0;
+		padding-top: 60px;
+	}
+
+	.partners .partner-back,
+	.partners .partner-next {
+		display: none;
+	}
+
+	.partners-slider .partners-wrapper {
+		display: none;
+	}
+
+	.partners .partners-item-tablet {
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		width: 230px;
+		height: 163px;
+
+		box-shadow: 0 10px 18px 2px rgba(0, 0, 0, 0.05);
+		background-color: #ffffff;
+	}
+
+	.partners-item-tablet:nth-child(4n) {
+		display: none;
+	}
+
+	.partners .partners-wrapper-tablet {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		padding-top: 36px;
+		padding-bottom: 102px;
+		list-style: none;
+	}
+
+	.partners .partners-current {
+		position: absolute;
+		z-index: 3;
+		top: 18px;
+		left: 223px;
+		width: 280px;
+		height: 200px;
+	}
+
+	.partners .button-indicator {
+		display: flex;
+		position: absolute;
+		padding: 0;
+		top: 226px;
+		left: 343px;
+		width: 4px;
+		height: 4px;
+		background-color: #dddddd;
+		border: 0;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.partners .button-indicator-2 {
+		width: 6px;
+		height: 6px;
+		top: 225px;
+		left: 353px;
+	}
+
+	.partners .button-indicator-active {
+		width: 8px;
+		height: 8px;
+		background-color: #00ffd7;
+	}
+
+	.partners .button-indicator-3 {
+		top: 224px;
+		left: 365px;
+	}
+
+	.partners .button-indicator-4 {
+		left: 377px;
+	}
 
 
     @media (max-width: 767px) {

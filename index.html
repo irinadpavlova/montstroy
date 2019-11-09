@@ -227,7 +227,7 @@
         </div>
       </div>
 
-      <div class="services-item services-item-tablet">
+      <div class="services-item-tablet">
         <form action="select1.php" method="post">
           <select name="engineering" onchange="top.location=this.value">
             <option value="engineering">Проектирование</option>
@@ -267,7 +267,7 @@
         </li>
         <li class="projects-item medial">
           <h3>ТК &laquo;Medial&raquo;</h3>
-          <p>В целях обеспечения электроэнергией телевизионного комплекса  было осуществлено строительство распределительной сети мощностью 20кВ</p>
+          <p>В целях обеспечения электроэнергией телевизионного комплекса было осуществлено строительство распределительной сети мощностью 20кВ</p>
           <button type="button" class="next">
             <span class="visually-hidden">Следующий проект</span>
           </button>
@@ -276,7 +276,7 @@
       <ul class="projects-row">
         <li class="projects-item energonatskompani">
           <h3>ОАО &laquo;ЭнергоНацКомпани&raquo;</h3>
-          <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО &laquo;ЭнергоНацКомпани&raquo;</p>
+          <p>Компанией были выполнены строительно-монтажные и пусконаладочные работы<span class="tablet-none">, а также поставлены материалы и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ</span> для ОАО &laquo;ЭнергоНацКомпани&raquo;</p>
           <button type="button" class="next">
             <span class="visually-hidden">Следующий проект</span>
           </button>
@@ -291,13 +291,14 @@
       </ul>
     </section>
     <section class="montstroy-section partners container">
-      <h2>Партнеры</h2>
+      <h2 class="partners-header-desktop">Партнеры</h2>
+      <h2 class="partners-header-tablet">Наши партнеры</h2>
       <div class="partners-slider">
         <ul class="partners-wrapper">
           <li class="partners-item">
             <img class="ava-company" src="img/аva-company.png" width="270" height="135" alt="Логотип компании &laquo;Ava company&raquo;">
           </li>
-          <li class="partners-item">
+          <li class="partners-item partners-current">
             <img class="mirror" src="img/mirror.png" width="270" height="135" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
           </li>
           <li class="partners-item">
@@ -307,11 +308,37 @@
             <img class="teplodom" src="img/teplodom.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
           </li>
         </ul>
+        <ul class="partners-wrapper-tablet">
+          <li class="partners-item-tablet">
+            <img class="ava-company" src="img/аva-company-tablet.png" width="149" height="81" alt="Логотип компании &laquo;Ava company&raquo;">
+          </li>
+          <li class="partners-item-tablet partners-current">
+            <img class="mirror" src="img/mirror-tablet.png" width="184" height="152" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
+          </li>
+          <li class="partners-item-tablet">
+            <img class="shield" src="img/shield-tablet.png" width="211" height="169" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
+          </li>
+          <li class="partners-item-tablet">
+            <img class="teplodom" src="img/teplodom-tablet.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
+          </li>
+        </ul>
         <button type="button" class="partner-back">
           <span class="visually-hidden">Назад</span>
         </button>
         <button type="button" class="partner-next">
           <span class="visually-hidden">Вперед</span>
+        </button>
+        <button type="button" class="button-indicator button-indicator-1">
+          <span class="visually-hidden">Слайд 1</span>
+        </button>
+        <button type="button" class="button-indicator button-indicator-2">
+          <span class="visually-hidden">Слайд 2</span>
+        </button>
+        <button type="button" class="button-indicator button-indicator-3 button-indicator-active">
+          <span class="visually-hidden">Слайд 3</span>
+        </button>
+        <button type="button" class="button-indicator button-indicator-4">
+          <span class="visually-hidden">Слайд 4</span>
         </button>
       </div>
     </section>
