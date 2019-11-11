@@ -81,26 +81,26 @@
     <section class="montstroy-section services  container" id="services">
       <h2>Услуги</h2>
       <div class="services-wrapper">
-        <div class="services-item">
+        <div class="services-item services-item-active">
           <h3>Проектирование</h3>
           <ul class="services-list">
-            <li>
-              <a href="#">Предварительная разработка концепции;</a>
+            <li class="services-list-item">
+              <a href="#">Предварительная разработка концепции<span class="tablet-none">;</span></a>
             </li>
-            <li>
-              <a href="#">Установка систем энергоснабжения;</a>
+            <li class="services-list-item">
+              <a href="#">Установка систем энергоснабжения<span class="tablet-none">;</span></a>
             </li>
-            <li>
-              <a href="#">Оформление задания на проектирование;</a>
+            <li class="services-list-item">
+              <a href="#">Оформление задания на проектирование<span class="tablet-none">;</span></a>
             </li>
-            <li>
-              <a href="#">Разработка всей рабочей и проектной документации;</a>
+            <li class="services-list-item">
+              <a href="#">Разработка всей рабочей и проектной документации<span class="tablet-none">;</span></a>
             </li>
-            <li>
-              <a href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора;</a>
+            <li class="services-list-item">
+              <a href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора<span class="tablet-none">;</span></a>
             </li>
-            <li>
-              <a href="#">Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм и проектных разработок).</a>
+            <li class="services-list-item">
+              <a href="#">Обеспечение авторского надзора на протяжении всего строительства<span class="tablet-none">(контроль за соблюдением всех норм и проектных разработок).</span></a>
             </li>
           </ul>
         </div>
@@ -226,20 +226,6 @@
           </ul>
         </div>
       </div>
-
-      <div class="services-item-tablet">
-        <form action="select1.php" method="post">
-          <select name="engineering" onchange="top.location=this.value">
-            <option value="engineering">Проектирование</option>
-            <option value="concept">Предварительная разработка концепции</option>
-            <option value="energy-supply">Установка систем энергоснабжения</option>
-            <option value="document-engineering">Оформление задания на проектирование</option>
-            <option value="document">Разработка всей рабочей и проектной документации</option>
-            <option value="state">Окончательное согласование проекта энергоснабжения в органах гос.надзора</option>
-            <option value="monitoring">Обеспечение авторского надзора на протяжении всего строительства</option>
-          </select>
-        </form>
-      </div>
     </section>
     <section class="montstroy-section projects container">
       <h2>Проекты</h2>
@@ -358,10 +344,10 @@
           <div class="user-data">
             <div>
               <label for="name">Имя</label>
-              <input type="text" name="name" id="name" required>
+              <input class="name" type="text" name="name" id="name" required>
             </div>
             <div>
-              <label for="phone">Телефон</label>
+              <label class="phone" for="phone">Телефон</label>
               <input type="tel" name="phone" id="phone" required>
             </div>
           </div>
