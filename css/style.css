@@ -995,14 +995,41 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts .footer-address {
+	position: relative;
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 25.92px;
 	margin-bottom: 50px;
 }
 
+.footer-contacts .footer-address::before,
+.footer-contacts .footer-email::before,
+.footer-contacts .footer-phone::before {
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -22px;
+	width: 12px;
+	height: 15px;
+	background-image: url(../img/icon-marker.svg);
+}
+
+.footer-contacts .footer-email::before {
+	width: 16px;
+	height: 12px;
+	background-image: url(../img/icon-letter.svg);
+}
+
+.footer-contacts .footer-phone::before {
+	width: 13px;
+	height: 13px;
+	background-image: url(../img/icon-phone.svg);
+}
+
 .footer-contacts .footer-email {
+	position: relative;
 	display: block;
+	padding-left: 10px;
 	margin-bottom: 37px;
 
 	color: #ffffff;
@@ -1013,6 +1040,11 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts .footer-phone {
 	position: relative;
+	padding-left: 6px;
+}
+
+.footer-contacts .footer-navigation {
+	display: none;
 }
 
 .footer-phone .phone {
@@ -1026,8 +1058,8 @@ input[type="radio"].visually-hidden {
 
 .footer-phone .work-time {
 	position:absolute;
-	top: 10px;
-	left: 0;
+	top: 9px;
+	left: 5px;
 	color: #ffffff;
 	line-height: 44.87px;
 	opacity: 0.6;
@@ -1156,6 +1188,7 @@ input[type="radio"].visually-hidden {
 
 	.main-header .phone {
 		margin-left: auto;
+		margin-right: 40px;
 		font-size: 14px;
 	}
 
@@ -1336,7 +1369,7 @@ input[type="radio"].visually-hidden {
 		align-items: flex-start;
 		width: 352px;
 		margin-left: 372px;
-		margin-bottom: 80px;
+		margin-bottom: 78px;
 	}
 
 	.services-item {
@@ -1350,8 +1383,8 @@ input[type="radio"].visually-hidden {
 
 	.services-item:nth-child(4) h3,
 	.services-item:nth-child(6) h3 {
-		padding-top: 8px;
-		padding-bottom: 4px;
+		padding-top: 5px;
+		padding-bottom: 3px;
 		line-height: normal;
 	}
 
@@ -1389,9 +1422,9 @@ input[type="radio"].visually-hidden {
 		box-sizing: border-box;
 		padding: 0;
 		margin: 0;
-		padding-top: 13px;
+		padding-top: 10px;
 		padding-right: 10px;
-		padding-bottom: 11px;
+		padding-bottom: 12px;
 		padding-left: 22px;
 		margin-bottom: 10px;
 
@@ -1403,11 +1436,15 @@ input[type="radio"].visually-hidden {
 		background-color: #f4f4f4;
 	}
 
+	.services-item:nth-child(3) h3 {
+    line-height: 26px;
+	}
+
 	.services-item h3::before {
 		position: absolute;
 		content: "";
-		top: 23px;
-		right: 20px;
+		top: 21px;
+		right: 21px;
 		width: 8px;
 		height: 5px;
 		background-image: url(../img/triangle.svg);
@@ -1674,15 +1711,15 @@ input[type="radio"].visually-hidden {
 
 	.write-us .wrapper-write {
     position: absolute;
-    top: -115px;
-    left: 169px;
+    top: -116px;
+    left: 64px;
     width: 413px;
     min-height: 413px;
     box-sizing: border-box;
     z-index: 3;
 		padding-top: 31px;
     padding-right: 48px;
-    padding-bottom: 29px;
+    padding-bottom: 22px;
     padding-left: 52px;
 	}
 
@@ -1699,7 +1736,7 @@ input[type="radio"].visually-hidden {
 
 	.user-data div:first-child {
 		width: 117px;
-    margin-right: 41px;
+    margin-right: 43px;
 	}
 
 	.write-us label::before {
@@ -1740,15 +1777,15 @@ input[type="radio"].visually-hidden {
 	}
 
 	.write-us .e-mail::before {
-    top: 50px;
+    top: 48px;
 	}
 
 	.write-us .letter {
-    padding-top: 14px;
+    padding-top: 11px;
 	}
 
 	.write-us .letter::before {
-    top: 65px;
+    top: 62px;
 	}
 
 	.write-us .button-write {
@@ -1760,20 +1797,172 @@ input[type="radio"].visually-hidden {
 	}
 
 	.write-us p {
-		margin-top: 9px;
-    margin-bottom: 29px;
+		margin-top: 7px;
+    margin-bottom: 28px;
     font-size: 10px;
     line-height: 12.82px;
 	}
 
 	.wrapper-write::before {
-		bottom: 100px;
+		bottom: 99px;
     right: 129px;
     width: 153px;
     height: 0;
 		border: none;
 		border-bottom: 1px dashed #000000;
 	}
+
+	.footer-contacts .contacts-wrapper {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 640px;
+    padding-top: 25px;
+    padding-bottom: 41px;
+  }
+
+	.footer-contacts .footer-logo {
+    display: none;
+  }
+
+	.footer-contacts .contacts-column:first-child {
+		position: relative;
+		display: flex;
+		margin-top: 98px;
+		width: 100%;
+
+		opacity: 0.5;
+		color: #ffffff;
+		font-size: 12px;
+	}
+
+	.footer-contacts .contacts-column:last-child {
+		padding-right: 7px;
+	}
+
+	.footer-contacts .name {
+		padding: 0;
+		margin: 0;
+		padding-right: 32px;
+		font-size: 12px;
+		line-height: 38px;
+		color: #fffffe;
+		opacity: 0.5;
+	}
+
+	.footer-contacts .footer-navigation {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 370px;
+
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	.footer-navigation a {
+		padding: 10px;
+		padding-right: 18px;
+		padding-left: 18px;
+		opacity: 0.5;
+		color: #ffffff;
+		font-size: 12px;
+		line-height: 38px;
+	}
+
+	.footer-contacts .footer-address,
+	.footer-contacts .footer-email,
+	.footer-phone .phone  {
+		font-size: 14px;
+	}
+
+	.footer-contacts .footer-address {
+    margin-bottom: 48px;
+	}
+
+	.footer-phone .work-time {
+		font-size: 12px;
+	}
+
+	.social-button {
+		width: 30px;
+		height: 30px;
+	}
+
+	.social-button-vk {
+    background-image: url(../img/vk-tablet.png);
+	}
+
+	.social-button-tw {
+		background-image: url(../img/tw-tablet.png);
+	}
+
+	.social-button-fb {
+		background-image: url(../img/fb-tablet.png);
+	}
+
+	.social-button-vk:hover,
+	.social-button-vk:focus {
+		background-image: url(../img/vk-tablet-hover.png);
+	}
+
+	.social-button-tw:hover,
+	.social-button-tw:focus {
+    background-image: url(../img/tw-tablet-hover.png);
+	}
+
+	.social-button-fb:hover,
+	.social-button-fb:focus {
+    background-image: url(../img/fb-tablet-hover.png);
+	}
+
+	.footer-social {
+		position: absolute;
+		top: 17px;
+		right: -9px;
+    display: flex;
+		justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+	.footer-social li {
+    padding-right: 0;
+	}
+
+	.footer-contacts .contacts-column:first-child::before {
+		position: absolute;
+		content: '';
+		top: 69px;
+		left: 0;
+		width: 640px;
+		height: 0;
+		border: none;
+		border-bottom: 1px solid #ffffff;
+		opacity: 0.1;
+	}
+
+	.footer-contacts {
+		position: relative;
+	}
+
+	.footer-contacts .contacts-wrapper::before {
+		position: absolute;
+		content: '';
+		top: 0px;
+		left: 0;
+		width: 772px;
+		height: 0;
+		border: 1px solid #00ffd7;
+	}
+
+
+
 
     @media (max-width: 767px) {
     	.block {
