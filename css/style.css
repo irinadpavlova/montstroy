@@ -1109,7 +1109,11 @@ footer .footer-contacts {
 	opacity: 0.25;
 }
 
-@media (max-width: 1023px) {
+.main-pharagraph-mobile {
+	display: none;
+}
+
+@media (min-width: 725px) and (max-width: 1169px) {
 
 	body {
 		min-width: 768px;
@@ -2000,11 +2004,314 @@ footer .footer-contacts {
 		border: 1px solid #00ffd7;
 	}
 
+	.main-pharagraph-mobile {
+		display: none;
+	}
+}
 
+@media (max-width: 724px) {
 
+	body {
+		min-width: 320px;
+	}
 
-    @media (max-width: 767px) {
-    	.block {
-        /* Стили, влияющие на экраны ДО 767px (Мобильные) */
-    	}
-    }
+	.container {
+		width: 280px;
+	}
+
+	.button {
+    min-width: inherit;
+		padding: 16px;
+    font-size: 16px;
+    line-height: 26px;
+	}
+
+	.main-header {
+		position: relative;
+    min-height: 50px;
+	}
+
+	.main-header .header-logo {
+		width: 86px;
+		height: 37px;
+	}
+
+	.main-header .logo {
+		padding: 0;
+		width: 86px;
+		height: 37px;
+	}
+
+	.main-header .burger-menu {
+		display: block;
+		box-sizing: border-box;
+	  position: relative;
+		width: 30px;
+		height: 30px;
+		margin-left: auto;
+		border: none;
+		background-color: #fbfbfb;
+	}
+
+	.main-header .burger-menu:focus {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.main-header .burger-menu:active {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	.main-header .burger-menu::before {
+		position: absolute;
+		content: "";
+		top: 8px;
+		left: 12px;
+		width: 18px;
+		height: 4px;
+
+		border-top: 2px solid rgba(0, 0, 0, 0.3);
+		border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	}
+
+	.main-header .burger-menu::after {
+		position: absolute;
+		content: "";
+		top: 20px;
+		left: 12px;
+		width: 18px;
+		height: 0;
+
+		border-top: 2px solid rgba(0, 0, 0, 0.3);
+	}
+
+	.main-navigation {
+		position: absolute;
+		top: 50px;
+		left: 0;
+
+		display: block;
+		display: none;
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
+		box-sizing: border-box;
+
+		background-color: #e7e7e7;
+	}
+
+	.main-navigation a {
+		padding-top: 11px;
+		padding-bottom: 9px;
+		color: #383838;
+		font-family: 'Circe', Arial, sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.main-navigation li {
+		text-align: center;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+
+	.main-navigation li:first-child {
+		display: none;
+	}
+
+	.main-header .phone {
+		margin-left: auto;
+		margin-right: 40px;
+		font-size: 14px;
+	}
+
+	.main-header .feedback {
+		display: none;
+	}
+
+	.main-header .phone {
+		display: none;
+	}
+
+	.about-us {
+		padding: 0;
+		margin: 0;
+		background-color: #fefdff;
+		background-image: none;
+	}
+
+	.about-us .about-us-wrapper {
+		position: relative;
+		padding-top: 127px;
+		padding-bottom: 29px;
+		margin-bottom: 220px;
+		background-color: #0b1223;
+		background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/background.jpg);
+		background-position: 71% 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.main-heading {
+		padding-bottom: 6px;
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		line-height: normal;
+		text-align: center;
+	}
+
+	.main-pharagraph-mobile {
+		display: block;
+		padding: 0;
+		margin: 0;
+		margin-top: 16px;
+		margin-bottom: 59px;
+
+		color: #fffffe;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.main-pharagraph {
+		position: absolute;
+		bottom: -38.5%;
+		left: 50%;
+		padding: 0;
+		margin: 0;
+		margin-left: -137px;
+		width: 274px;
+
+		color: #000000;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+
+	.main-pharagraph .foundation-year {
+		color: #000000;
+	}
+
+	.buttons-wrapper {
+    display: flex;
+		flex-direction: column;
+		min-width: 280px;
+    width: auto;
+    margin-bottom: 23px;
+	}
+
+	.button-service {
+    margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.advantages {
+		position: relative;
+		display: block;
+		color: #000000;
+		font-size: 14px;
+	}
+
+	.container-advantages {
+		min-width: inherit;
+		background-color: #fefdff;
+	}
+
+	.advantages p {
+		padding: 0;
+		margin: 0;
+		width: 152px;
+		padding-top: 95px;
+		margin: 0 auto;
+	}
+
+	.manufacture p {
+		width: 185px;
+	}
+
+	.advantages div {
+		position: relative;
+		width: 280px;
+		min-height: 200px;
+		box-sizing: border-box;
+		color: #000000;
+
+		font-size: 14px;
+		line-height: 20px;
+		border: 1px solid #dddddd;
+	}
+
+	.advantages p {
+		padding-top: 115px;
+	}
+
+	.advantages .quality::before {
+		position: absolute;
+		content: "";
+		top: 30px;
+		left: 107px;
+		width: 62px;
+		height: 64px;
+		background-image: url(../img/like-tablet.png);
+	}
+
+	.advantages .performan {
+		display: block;
+	}
+
+	.advantages .quality {
+		display: none;
+	}
+
+	.advantages .manufacture {
+		display: none;
+	}
+
+	.advantages .performan::before {
+		position: absolute;
+		content: "";
+		top: 41px;
+		left: 95px;
+		width: 89px;
+		height: 59px;
+		background-image: url(../img/handshake-tablet.png);
+	}
+
+	.advantages .manufacture::before {
+		position: absolute;
+		content: "";
+		top: 30px;
+    left: 110px;
+		width: 70px;
+		height: 69px;
+		background-image: url(../img/settings-tablet.png);
+	}
+
+	.advantages .button-indicator {
+		display: flex;
+		position: absolute;
+    padding: 0;
+		top: 206px;
+		left: 123px;
+		width: 6px;
+		height: 6px;
+    background-color: #d6d6d6;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+	}
+
+	.advantages .button-indicator-2 {
+		top: 205px;
+    left: 135px;
+
+		width: 8px;
+		height: 8px;
+	}
+
+	.advantages .button-indicator-active {
+		background-color: #00ffd7;
+	}
+
+	.advantages .button-indicator-3 {
+		left: 148px;
+		background-color: #dddddd;
+	}
