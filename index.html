@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MontStroy</title>
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/swiper.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -13,6 +14,7 @@
       <a class="logo">
         <img class="header-logo" src="img/logo.png" width="141" height="60" alt="Логотип компании строительно-монтажных работ &laquo;МонтСтрой&raquo;">
       </a>
+      <button class="burger-menu" type="button"></button>
       <nav class="navigation">
         <ul class="main-navigation">
           <li>
@@ -32,7 +34,6 @@
           </li>
         </ul>
       </nav>
-      <button class="burger-menu" type="button"></button>
       <a class="phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
       <a class="feedback" href="#bottom">Обратная связь</a>
     </div>
@@ -309,54 +310,25 @@
     <section class="montstroy-section partners container">
       <h2 class="partners-header-desktop">Партнеры</h2>
       <h2 class="partners-header-tablet">Наши партнеры</h2>
-      <div class="partners-slider">
-        <ul class="partners-wrapper">
-          <li class="partners-item">
-            <img class="ava-company" src="img/аva-company.png" width="270" height="135" alt="Логотип компании &laquo;Ava company&raquo;">
-          </li>
-          <li class="partners-item partners-current">
-            <img class="mirror" src="img/mirror.png" width="270" height="135" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
-          </li>
-          <li class="partners-item">
-            <img class="shield" src="img/shield.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
-          </li>
-          <li class="partners-item">
-            <img class="teplodom" src="img/teplodom.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
-          </li>
-        </ul>
-        <ul class="partners-wrapper-tablet">
-          <li class="partners-item-tablet">
+      <div id="swiper-partners" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img class="ava-company" src="img/аva-company-tablet.png" width="149" height="81" alt="Логотип компании &laquo;Ava company&raquo;">
-          </li>
-          <li class="partners-item-tablet partners-current">
+          </div>
+          <div class="swiper-slide">
             <img class="mirror" src="img/mirror-tablet.png" width="184" height="152" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
-          </li>
-          <li class="partners-item-tablet">
+          </div>
+          <div class="swiper-slide">
             <img class="shield" src="img/shield-tablet.png" width="211" height="169" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
-          </li>
-          <li class="partners-item-tablet">
-            <img class="teplodom" src="img/teplodom-tablet.png" width="270" height="135" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
-          </li>
-        </ul>
-        <button type="button" class="partner-back">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <button type="button" class="partner-next">
-          <span class="visually-hidden">Вперед</span>
-        </button>
-        <button type="button" class="button-indicator button-indicator-1">
-          <span class="visually-hidden">Слайд 1</span>
-        </button>
-        <button type="button" class="button-indicator button-indicator-2">
-          <span class="visually-hidden">Слайд 2</span>
-        </button>
-        <button type="button" class="button-indicator button-indicator-3 button-indicator-active">
-          <span class="visually-hidden">Слайд 3</span>
-        </button>
-        <button type="button" class="button-indicator button-indicator-4">
-          <span class="visually-hidden">Слайд 4</span>
-        </button>
+          </div>
+          <div class="swiper-slide">
+            <img class="teplodom" src="img/teplodom-tablet.png" width="149" height="81" alt="Логотип ЗАО &laquo;НТФ Теплодомэнерг&raquo;">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </section>
   </main>
   <footer>
@@ -433,5 +405,7 @@
       <p class="footer-copyright">1992-2018 &copy; ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
     </section>
   </footer>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
