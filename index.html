@@ -35,7 +35,7 @@
         </ul>
       </nav>
       <a class="phone" href="tel:+74954526723">+7 (495) 452-67-23</a>
-      <a class="feedback" href="#bottom">Обратная связь</a>
+      <a class="feedback" href="#footer-contacts">Обратная связь</a>
     </div>
   </header>
   <main>
@@ -49,7 +49,7 @@
           </p>
           <div class="buttons-wrapper">
             <a class="button button-service" href="#services">Наши услуги</a>
-            <a class="button button-form" href="#form">Связаться с нами</a>
+            <a class="button button-form" href="#footer-contacts">Связаться с нами</a>
           </div>
         </div>
       </div>
@@ -308,23 +308,23 @@
         <div class="swiper-partners swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="ava-company" src="img/аva-company-tablet.png" width="149" height="81" alt="Логотип компании &laquo;Ava company&raquo;">
+              <img class="ava-company" src="img/аva-company.png" width="149" height="81" alt="Логотип компании &laquo;Ava company&raquo;">
+            </div>
+            <div class="swiper-slide swiper-slide-mirror">
+              <img class="mirror" src="img/mirror.png" width="92" height="104" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
             </div>
             <div class="swiper-slide">
-              <img class="mirror" src="img/mirror-tablet-1.png" width="104" height="115" alt="Логотип бизнес центра &laquo;Mirror&raquo;">
+              <img class="shield" src="img/shield.png" width="173" height="71" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
             </div>
             <div class="swiper-slide">
-              <img class="shield" src="img/shield-tablet-1.png" width="173" height="71" alt="Логотип охранного предприятия &laquo;Shield&raquo;">
-            </div>
-            <div class="swiper-slide">
-              <img class="teplodom" src="img/teplodom-tablet-1.png" width="136" height="99" alt="Логотип ЗАО &laquo;НТФ Теплодомэнерг&raquo;">
+              <img class="teplodom" src="img/teplodom.png" width="136" height="99" alt="Логотип ЗАО &laquo;НТФ Теплодомэнерг&raquo;">
             </div>
           </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </section>
   </main>
   <footer>
@@ -373,14 +373,14 @@
             <li><a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           </ul>
         </div>
-        <div class="write-us">
+        <div id="footer-contacts" class="write-us">
           <div class="wrapper-write container">
             <h2>Свяжитесь с нами</h2>
             <form class="write" action="https://echo.htmlacademy.ru" method="post">
               <div class="user-data">
                 <div>
                   <label for="name">Имя</label>
-                  <input class="name" type="text" name="name" id="name" required>
+                  <input type="text" name="name" id="name" required>
                 </div>
                 <div>
                   <label class="phone" for="phone">Телефон</label>
@@ -391,7 +391,7 @@
               <input type="email" name="email" id="e-mail" required>
               <label class="letter" for="letter">Сообщение</label>
               <input type="text" name="letter" id="letter" required>
-              <p>Заполняя форму на сайте, вы соглашаетесь с нашей<br>
+              <p class="policy">Заполняя форму на сайте, вы соглашаетесь с нашей<br>
                 <a class="privacy-policy" href="#">Политикой конфиденциальности</a>
               </p>
               <button class="button-write" type="submit">Отправить</button>

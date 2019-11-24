@@ -223,7 +223,7 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 
   padding-top: 152px;
-	padding-bottom: 84px;
+	padding-bottom: 30px;
 }
 
 .main-heading {
@@ -284,8 +284,14 @@ input[type="radio"].visually-hidden {
 	line-height: 20px;
 }
 
+.about-us .swiper-container-pagination {
+	width: 1170px;
+	margin: 0 auto;
+}
+
 .swiper-advantages .swiper-slide{
-	width: 240px;
+	width: 250px;
+	height: 200px;
 
   background-color: transparent;
 	text-align: center;
@@ -321,13 +327,15 @@ input[type="radio"].visually-hidden {
 }
 
 .swiper-advantages .swiper-wrapper {
-	min-height: 320px;
+	width: 1170px;
+	min-height: 200px;
+	margin: 0 auto;
 }
 
 .services {
 	position: relative;
 
-	padding-top: 80px;
+	padding-top: 77px;
 	padding-bottom: 40px;
 }
 
@@ -389,9 +397,9 @@ input[type="radio"].visually-hidden {
 .montstroy-section::before {
 	position: absolute;
 	content: "";
-	top: 123px;
-	right: 0;
-  width: 866px;
+	top: 122px;
+  right: 11px;
+  width: 868px;
 
   border: none;
 	border-bottom: 2px solid #000000;
@@ -512,12 +520,12 @@ footer .mobile-heading {
 }
 
 .projects h2 {
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 
 .projects::before {
-	top: 43px;
-	right: 9px;
+	top: 47px;
+  right: 11px;
 }
 
 .futur h3 {
@@ -621,6 +629,10 @@ footer .mobile-heading {
 	position: relative;
 }
 
+.partners .partners-header-desktop {
+	padding-bottom: 40px;
+}
+
 .partners .swiper-button-prev {
 	position: absolute;
 	left: 1065px;
@@ -685,10 +697,14 @@ footer .mobile-heading {
 .swiper-partners {
   width: 1170px;
   box-sizing: border-box;
-  padding-bottom: 35px;
+  padding-bottom: 126px;
 }
 
-.swiper-pagination {
+.about-us .swiper-pagination {
+  display: none;
+}
+
+.partners .swiper-pagination {
   display: none;
 }
 
@@ -779,7 +795,7 @@ footer .mobile-heading {
 .write-us h2 {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 31px;
+	margin-bottom: 28px;
 
 	color: #000000;
 	font-family: 'Raleway-Black', Arial, sans-serif;
@@ -806,18 +822,18 @@ footer .mobile-heading {
 .write .user-data {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -33px;
+  margin-bottom: 14px;
 }
 
 .user-data div:first-child {
-	margin-right: 39px;
+	margin-right: 56px;
 }
 
 .write-us .letter {
-	padding-top: 24px;
+	padding-top: 21px;
 }
 
-.write p {
+.write .policy {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 38px;
@@ -865,7 +881,7 @@ footer .mobile-heading {
 }
 
 .write-us .letter::before {
-	top: 92px;
+	top: 90px;
 }
 
 .write-us .button-write {
@@ -952,7 +968,7 @@ footer .mobile-heading {
 .footer-contacts .name {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 38px;
+	margin-bottom: 39px;
 
 	color: #fffffe;
 	font-size: 16px;
@@ -1284,22 +1300,22 @@ footer .mobile-heading {
 	}
 
 	.about-us .swiper-container-pagination {
-		min-width: 768px;
+		position: relative;
+		width: 724px;
+		height: 280px;
 		box-sizing: border-box;
 		padding: 0;
-		padding-top: 69px;
-		padding-right: 26px;
-		padding-left: 26px;
-		padding-bottom: 46px;
+		padding-bottom: 30px;
 		background-color: #fefdff;
 	}
 
 	.advantages p {
 		padding: 0;
 		margin: 0;
-		font-size: 14px;
+		font-size: 12px;
+		line-height: 16px;
 		width: 152px;
-		padding-top: 95px;
+		padding-top: 42%;
 		margin: 0 auto;
 	}
 
@@ -1307,14 +1323,34 @@ footer .mobile-heading {
 		width: 185px;
 	}
 
+	.swiper-advantages .quality p {
+    padding-right: 0;
+  }
+
+	.swiper-advantages .swiper-wrapper {
+		position: relative;
+    left: -10px;
+		width: 724px;
+		box-sizing: border-box;
+		height: 280px;
+		padding-top: 69px;
+		padding-bottom: 30px;
+	}
+
+	.about-us .swiper-container {
+		height: 280px;
+	}
+
 	.advantages .swiper-slide {
 		position: relative;
-		width: 230px;
-		min-height: 163px;
+		top: 0;
+		left: 0;
+		width: 228px;
+		height: 160px;
 		box-sizing: border-box;
 
-		opacity: 0.7;
 		color: #000000;
+		opacity: 0.7;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 16.26px;
@@ -1323,16 +1359,25 @@ footer .mobile-heading {
 		background-color: #ffffff;
 	}
 
+	.swiper-advantages .swiper-slide-next {
+    position: relative;
+    left: -15px;
+  }
+
 	.swiper-advantages .swiper-slide-active {
 		position: relative;
 		z-index: 3;
 		top: -20px;
 		width: 280px;
-		min-height: 200px;
+		height: 200px;
 		box-sizing: border-box;
+		margin-left: -15px;
 
+		opacity: 1;
+	}
+
+	.swiper-advantages .swiper-slide-active p {
 		color: #000000;
-		padding-top: 118px;
 
 		font-size: 14px;
 		line-height: 20px;
@@ -1342,8 +1387,8 @@ footer .mobile-heading {
 	.swiper-advantages .quality::before {
 		position: absolute;
 		content: "";
-		top: 23px;
-		left: 84px;
+		top: 15%;
+    left: 39%;
 		width: 62px;
 		height: 64px;
 		background-image: url(../img/like-tablet.png);
@@ -1352,27 +1397,49 @@ footer .mobile-heading {
 	.swiper-advantages .performan::before {
 		position: absolute;
 		content: "";
-		top: 49px;
-		left: 95px;
+		bottom: 46%;
+    left: 34%;
 		width: 89px;
 		height: 59px;
 		background-image: url(../img/handshake-tablet.png);
+		opacity: 0.4;
+	}
+
+	.swiper-advantages .swiper-slide-active.performan::before {
+		opacity: 1;
 	}
 
 	.swiper-advantages .manufacture::before {
 		position: absolute;
 		content: "";
-		top: 21px;
-    left: 81px;
+		top: 13%;
+    left: 32%;
 		width: 70px;
 		height: 69px;
 		background-image: url(../img/settings-tablet.png);
 	}
 
+	.about-us .advantages {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		height: 280px;
+	}
+
+	.about-us .swiper-pagination {
+    display: block;
+		top: 252px;
+    left: 349px;
+		width: 40px;
+		height: 16px;
+		overflow: hidden;
+  }
+
 	.about-us .swiper-pagination-bullet {
 		width: 8px;
 		height: 8px;
+		margin-right: 5px;
     background-color: #d6d6d6;
+		opacity: 1;
 	}
 
 	.about-us .swiper-pagination-bullet-active {
@@ -1380,7 +1447,6 @@ footer .mobile-heading {
 	}
 
 	.about-us .swiper-pagination-bullet-active + .swiper-pagination-bullet {
-		left: 368px;
 		background-color: #dddddd;
 	}
 
@@ -1419,6 +1485,7 @@ footer .mobile-heading {
 
 	.services h2 {
 		padding-bottom: 16px;
+		padding-top: 17px;
 	}
 
 	.services-item {
@@ -1521,9 +1588,9 @@ footer .mobile-heading {
 		width: 352px;
 		min-height: 47px;
 		box-sizing: border-box;
-		padding-top: 8px;
+		padding-top: 12px;
 		padding-right: 52px;
-		padding-bottom: 11px;
+		padding-bottom: 8px;
 		padding-left: 20px;
 
 		font-size: 14px;
@@ -1683,9 +1750,10 @@ footer .mobile-heading {
   }
 
   .swiper-partners .swiper-wrapper {
+		position: relative;
+    left: -10px;
     width: 724px;
     padding-top: 20px;
-		padding-left: -10px;
     margin: 0 auto;
   }
 
@@ -1708,6 +1776,15 @@ footer .mobile-heading {
     height: 200px;
     margin-left: -15px;
   }
+
+	.swiper-slide-active.swiper-slide-mirror img {
+		width: 104px;
+		height: 114px;
+	}
+
+	.swiper-slide-active.swiper-slide-mirror {
+		padding-top: 43px;
+	}
 
   .swiper-partners .swiper-slide-next {
     position: relative;
@@ -1821,7 +1898,13 @@ footer .mobile-heading {
 
 	.write .user-data {
 		flex-wrap: nowrap;
-		margin-bottom: -7px;
+		margin-bottom: 13px;
+	}
+
+	.write .policy {
+    margin-bottom: 29px;
+    font-size: 10px;
+		line-height: 13px;
 	}
 
 	.write-us .e-mail::before,
@@ -2229,22 +2312,28 @@ footer .mobile-heading {
 
 	.advantages {
 		position: relative;
-		display: block;
+		display: flex;
 		color: #000000;
 		font-size: 14px;
 	}
 
-	.container-advantages {
-		min-width: inherit;
+	.swiper-advantages {
+		width: 280px;
 		padding: 0;
-		background-color: #fefdff;
+		background-color: #ffffff;
 	}
 
+	.about-us .swiper-pagination {
+    display: block;
+    top: 201px;
+    left: 123px;
+  }
+
+	.about-us .swiper-slide
 	.advantages p {
 		padding: 0;
 		margin: 0;
 		width: 152px;
-		padding-top: 95px;
 		margin: 0 auto;
 	}
 
@@ -2252,10 +2341,34 @@ footer .mobile-heading {
 		width: 185px;
 	}
 
-	.advantages div {
-		position: relative;
+	.about-us .swiper-container-pagination {
 		width: 280px;
-		min-height: 200px;
+		height: 230px;
+		padding-bottom: 30px;
+	}
+
+	.about-us .swiper-container {
+		width: 280px;
+		height: 200px;
+		box-sizing: border-box;
+	}
+
+	.about-us .swiper-slide-active {
+    top: 0;
+    margin-left: 0;
+  }
+
+  .about-us .swiper-slide-next {
+    left: 15px;
+  }
+
+	.advantages .swiper-slide {
+		position: relative;
+		top: 0;
+		left: 0;
+
+		width: 280px;
+		height: 200px;
 		box-sizing: border-box;
 		color: #000000;
 		padding: 0;
@@ -2266,56 +2379,41 @@ footer .mobile-heading {
 		border: 1px solid #dddddd;
 	}
 
-	.advantages .advantages-current {
-    position: relative;
+	.about-us .swiper-pagination-bullet {
+		width: 6px;
+		height: 6px;
+		background-color: #dddddd;
+	}
+
+	.about-us .swiper-pagination-bullet-active {
+		width: 8px;
+		height: 8px;
+		background-color: #00ffd7;
+	}
+
+	.about-us .swiper-wrapper {
+		left: 0;
+		width: 280px;
+		height: 200px;
+		padding-top: 0;
+		box-sizing: border-box;
+	}
+
+	.advantages .swiper-slide-active {
+		position: relative;
 		top: 0;
 		left: 0;
-	}
 
-	.advantages p {
-		padding-top: 115px;
-	}
+		width: 280px;
+		height: 200px;
+		box-sizing: border-box;
+		color: #000000;
+		padding: 0;
+		margin: 0;
 
-	.advantages .quality::before {
-		position: absolute;
-		content: "";
-		top: 30px;
-		left: 107px;
-		width: 62px;
-		height: 64px;
-		background-image: url(../img/like-tablet.png);
-	}
-
-	.advantages .performan {
-		display: block;
-	}
-
-	.advantages .quality {
-		display: none;
-	}
-
-	.advantages .manufacture {
-		display: none;
-	}
-
-	.advantages .performan::before {
-		position: absolute;
-		content: "";
-		top: 41px;
-		left: 95px;
-		width: 89px;
-		height: 59px;
-		background-image: url(../img/handshake-tablet.png);
-	}
-
-	.advantages .manufacture::before {
-		position: absolute;
-		content: "";
-		top: 30px;
-    left: 110px;
-		width: 70px;
-		height: 69px;
-		background-image: url(../img/settings-tablet.png);
+		font-size: 14px;
+		line-height: 20px;
+		border: 1px solid #dddddd;
 	}
 
 	.montstroy-section h2,
@@ -2331,7 +2429,7 @@ footer .mobile-heading {
 	.services h2 {
 		padding: 0;
 		margin: 0;
-		padding-top: 45px;
+		padding-top: 15px;
 		padding-bottom: 10px;
 
 		font-size: 20px;
@@ -2520,6 +2618,7 @@ footer .mobile-heading {
 		display: block;
 		padding-top: 22px;
 		margin-top: 0;
+		padding-bottom: 1px;
 	}
 
   .swiper-partners {
@@ -2534,6 +2633,14 @@ footer .mobile-heading {
 	}
 
   .swiper-partners .swiper-slide-active {
+    width: 280px;
+    box-sizing: border-box;
+    height: 135px;
+    border: 1px solid #d7d7d7;
+    box-shadow: none;
+  }
+
+	.swiper-partners .swiper-slide {
     width: 280px;
     box-sizing: border-box;
     height: 135px;
@@ -2576,10 +2683,11 @@ footer .mobile-heading {
 
   .partners .swiper-pagination {
 		top: 149px;
-    left: 126px;
+    left: 124px;
   }
 
 	.swiper-partners .swiper-wrapper {
+		left: 0;
     width: 724px;
     padding-top: 3px;
 	}
@@ -2587,6 +2695,10 @@ footer .mobile-heading {
 	.partners {
     margin-bottom: 0px;
   }
+
+	.swiper-slide-active.swiper-slide-mirror {
+		padding-top: 0;
+	}
 
 	footer .mobile-heading {
 		display: block;
@@ -2718,7 +2830,11 @@ footer .mobile-heading {
 	}
 
 	.user-data div:first-child {
-    margin-right: 129px;
+    margin-right: 41px;
+	}
+
+	.write .policy {
+    margin-bottom: 34px;
 	}
 
 	.footer-contacts .contacts-column:first-child {
@@ -2747,6 +2863,10 @@ footer .mobile-heading {
 	.footer-contacts .contacts-column:first-child {
   	padding-top: 0;
 	}
+
+	.footer-contacts {
+    padding-bottom: 14px;
+  }
 
 	.footer-navigation a {
 		display: block;

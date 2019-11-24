@@ -1,3 +1,23 @@
+var swiper = new Swiper('.swiper-advantages', {
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  spaceBetween: 0,
+  slidesPerView: 'auto',
+  autoHeight: true,
+  breakpoints :{
+    1169:{
+      loop: true,
+      spaceBetween : 10,
+      centeredSlides: true,
+    },
+    768:{
+      spaceBetween: 0,
+    }
+  }
+});
 
 var swiper = new Swiper('.swiper-partners', {
   loop: true,
@@ -5,43 +25,23 @@ var swiper = new Swiper('.swiper-partners', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   spaceBetween: 30,
   slidesPerView: 'auto',
   autoHeight: true,
   breakpoints :{
     1169:{
       spaceBetween : 10,
-      slidesPerView: 'auto',
       centeredSlides: true,
     },
     768:{
       spaceBetween: 0,
-      slidesPerView: 'auto',
     }
   }
 });
-
-// var swiper = new Swiper('.swiper-advantages', {
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   spaceBetween: 0,
-//   slidesPerView: 'auto',
-//   autoHeight: true,
-//   breakpoints :{
-//     1169:{
-//       spaceBetween : 10,
-//       slidesPerView: 'auto',
-//       centeredSlides: true,
-//     },
-//     768:{
-//       spaceBetween: 0,
-//       slidesPerView: 'auto',
-//     }
-//   }
-// });
 
 var menu = document.querySelector(".burger-menu");
 var navigation = document.querySelector(".main-navigation");
