@@ -226,6 +226,12 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 30px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about-us {
+	  background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url('../img/background@2x.jpg');
+  }
+}
+
 .main-heading {
 	padding: 0;
 	margin: 0;
@@ -309,21 +315,43 @@ input[type="radio"].visually-hidden {
 }
 
 .swiper-advantages .quality {
-	background-image: url(../img/like.png);
+	background-image: url('../img/like.png');
   background-repeat: no-repeat;
   background-position: 65px 20px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .swiper-advantages .quality {
+  background-image: url('../img/like@2x.png');
+	background-size: 62px 64px;
+  }
+}
+
 .swiper-advantages .performan {
-	background-image: url(../img/handshake.png);
+	background-image: url('../img/handshake.png');
   background-repeat: no-repeat;
   background-position: 77px 35px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .swiper-advantages .performan {
+  background-image: url('../img/handshake@2x.png');
+  background-size: 74px 49px;
+  }
+}
+
 .swiper-advantages .manufacture {
-	background-image: url(../img/settings.png);
+	background-image: url('../img/settings.png');
   background-repeat: no-repeat;
   background-position: 99px 16px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .swiper-advantages .manufacture {
+  background-image: url('../img/settings@2x.png');
+  background-size: 70px 69px;
+	}
 }
 
 .swiper-advantages .swiper-wrapper {
@@ -469,7 +497,8 @@ footer .mobile-heading {
 	line-height: 22px;
 }
 
-.projects-row:nth-child(3) h3 {
+.energonatskompani h3,
+.buratino h3 {
 	color: #ffffff;
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 32px;
@@ -491,7 +520,7 @@ footer .mobile-heading {
 
 .projects .projects-item {
 	position: relative;
-	width: 290px;
+	width: 100%;
 	min-height: 290px;
 	box-sizing: border-box;
 	margin-right: 3px;
@@ -502,21 +531,16 @@ footer .mobile-heading {
 	padding-left: 30px;
 }
 
-.projects-row:nth-child(2) .projects-item:nth-child(4n) {
+.projects-row .projects-item:last-child {
 	margin-right: 0;
 }
 
-.projects-row:nth-child(3) .projects-item:nth-child(2n) {
-	margin-right: 0;
+.energonatskompani p {
+	width: 83% ;
 }
 
-.projects-row:nth-child(3) .projects-item {
-	width: 583px;
-	padding-right: 76px;
-}
-
-.projects-row:nth-child(3) .buratino {
-	padding-right: 73px;
+.buratino p {
+	width: 89%;
 }
 
 .projects h2 {
@@ -543,12 +567,14 @@ footer .mobile-heading {
 	padding-bottom: 46px;
 }
 
-.projects-row:nth-child(3) .projects-item {
+.projects .energonatskompani,
+.projects .buratino {
 	padding-top: 40px;
 }
 
-.projects-row:nth-child(3) h3 {
-  padding-bottom: 31px;
+.energonatskompani h3,
+.buratino h3 {
+	padding-bottom: 31px;
 }
 
 .projects .next {
@@ -591,12 +617,33 @@ footer .mobile-heading {
 	background-image: url('../img/futur.png');
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .futur {
+  background-image: url('../img/futur@2x.png');
+  background-size: contain;
+	}
+}
+
 .projects .oreol {
 	background-image: url('../img/oreol.png');
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .oreol {
+  background-image: url('../img/oreol@2x.png');
+  background-size: contain;
+	}
+}
+
 .projects .semeynyi {
 	background-image: url('../img/semeynyi.png');
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .semeynyi {
+  background-image: url('../img/semeynyi@2x.png');
+  background-size: contain;
+	}
 }
 
 .projects .medial {
@@ -605,14 +652,35 @@ footer .mobile-heading {
 	background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial.png');
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .medial  {
+  background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial@2x.png');
+  background-size: contain;
+	}
+}
+
 .projects .energonatskompani {
 	background-color: #000000;
 	background-image: url('../img/energonatskompani.png');
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .energonatskompani {
+  background-image: url('../img/energonatskompani@2x.png');
+  background-size: contain;
+	}
+}
+
 .projects .buratino {
 	background-color: #000000;
 	background-image: url('../img/buratino.png');
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .projects .buratino {
+  background-image: url('../img/buratino@2x.png');
+  background-size: contain;
+	}
 }
 
 .projects {
