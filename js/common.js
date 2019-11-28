@@ -43,8 +43,8 @@ var swiper = new Swiper('.swiper-partners', {
   }
 });
 
-var menu = document.querySelector(".burger-menu");
-var navigation = document.querySelector(".main-navigation");
+// var hamburger = document.querySelector(".burger-menu");
+// var menu = document.querySelector(".main-navigation");
 var heading1 = document.querySelector(".services-item-1");
 var heading2 = document.querySelector(".services-item-2");
 var heading3 = document.querySelector(".services-item-3");
@@ -64,9 +64,34 @@ var list4 = document.querySelector(".services-list-4");
 var list5 = document.querySelector(".services-list-5");
 var list6 = document.querySelector(".services-list-6");
 
-menu.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  navigation.classList.toggle("modal-show");
+// menu.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   navigation.classList.toggle("modal-show");
+// });
+
+
+var hamburger = document.querySelector('.burger-menu');
+var menu = document.querySelector('.main-navigation');
+
+var toggleMenu = function toggleMenu() {
+  menu.classList.toggle('modal-show');
+};
+
+hamburger.addEventListener('click', function(e) {
+  e.stopPropagation();
+
+  toggleMenu();
+});
+
+document.addEventListener('click', function (e) {
+  var target = e.target;
+  var its_menu = target == menu || menu.contains(target);
+  var its_hamburger = target == hamburger;
+  var menu_is_active = menu.classList.contains('modal-show');
+
+  if (!its_menu && !its_hamburger && menu_is_active) {
+    toggleMenu();
+  }
 });
 
 heading1.addEventListener("click", function (evt) {

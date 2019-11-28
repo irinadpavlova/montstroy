@@ -1252,10 +1252,6 @@ footer .mobile-heading {
 		background-color: #fbfbfb;
 	}
 
-	.main-header .burger-menu:focus {
-		background-color: rgba(0, 0, 0, 0.1);
-	}
-
 	.main-header .burger-menu:active {
 		background-color: rgba(0, 0, 0, 0.2);
 	}
@@ -2317,10 +2313,6 @@ footer .mobile-heading {
 		margin-left: auto;
 		border: none;
 		background-color: #fbfbfb;
-	}
-
-	.main-header .burger-menu:focus {
-		background-color: rgba(0, 0, 0, 0.1);
 	}
 
 	.main-header .burger-menu:active {
