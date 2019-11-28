@@ -346,8 +346,7 @@ input[type="radio"].visually-hidden {
   background-position: 99px 16px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .swiper-advantages .manufacture {
   background-image: url('../img/settings@2x.png');
   background-size: 70px 69px;
@@ -615,34 +614,37 @@ footer .mobile-heading {
 
 .projects .futur {
 	background-image: url('../img/futur.png');
+	background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .futur {
   background-image: url('../img/futur@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
 .projects .oreol {
 	background-image: url('../img/oreol.png');
+	background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .oreol {
   background-image: url('../img/oreol@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
 .projects .semeynyi {
 	background-image: url('../img/semeynyi.png');
+	background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .semeynyi {
   background-image: url('../img/semeynyi@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
@@ -650,36 +652,39 @@ footer .mobile-heading {
 	position: relative;
 	background-color: #292929;
 	background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial.png');
+  background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .medial  {
   background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
 .projects .energonatskompani {
 	background-color: #000000;
 	background-image: url('../img/energonatskompani.png');
+	background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .energonatskompani {
   background-image: url('../img/energonatskompani@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
 .projects .buratino {
 	background-color: #000000;
 	background-image: url('../img/buratino.png');
+	background-size: cover;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .projects .buratino {
   background-image: url('../img/buratino@2x.png');
-  background-size: contain;
+  background-size: cover;
 	}
 }
 
@@ -789,36 +794,6 @@ footer .mobile-heading {
 
 .partners-header-tablet {
 	display: none;
-}
-
-.map img {
-	position: relative;
-}
-
-.map img::before {
-	position: absolute;
-  content: "";
-  top: 300px;
-  right: 500px;
-  width: 72px;
-	height: 98px;
-	z-index: 2;
-	background: url(../img/marker.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.map p {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-}
-
-.map img {
-  display: none;
-
-  width: 1922px;
-  height: 807px;
 }
 
 footer {
@@ -1079,6 +1054,13 @@ footer .mobile-heading {
   background-image: url("../img/icon-vk.png");
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .social-button-vk {
+    background-image: url("../img/icon-vk@2x.png");
+    background-size: 35px 21px;
+  }
+}
+
 .social-button-vk:hover,
 .social-button-vk:focus {
   background-image: url("../img/icon-vk-hover.png");
@@ -1088,6 +1070,13 @@ footer .mobile-heading {
   background-image: url("../img/icon-tw.png");
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .social-button-tw {
+    background-image: url("../img/icon-tw@2x.png");
+    background-size: 27px 22px;
+  }
+}
+
 .social-button-tw:hover,
 .social-button-tw:focus {
   background-image: url("../img/icon-tw-hover.png");
@@ -1095,6 +1084,13 @@ footer .mobile-heading {
 
 .social-button-fb {
   background-image: url("../img/icon-fb.png");
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .social-button-fb {
+    background-image: url("../img/icon-fb@2x.png");
+    background-size: 14px 26px;
+  }
 }
 
 .social-button-fb:hover,
@@ -1202,6 +1198,11 @@ footer .mobile-heading {
 
 .mobile-contacts {
 	display: none;
+}
+
+.map iframe {
+	width: 100%;
+	border: 0;
 }
 
 @media (max-width: 1169px) {
@@ -1341,6 +1342,13 @@ footer .mobile-heading {
 		background-size: cover;
 	}
 
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	  .about-us .about-us-wrapper {
+	    background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/background@2x.jpg);
+	    background-size: cover;
+	  }
+	}
+
 	.about-us .main-heading {
   	padding-bottom: 15px;
 		padding-left: 62px;
@@ -1459,8 +1467,15 @@ footer .mobile-heading {
     left: 39%;
 		width: 62px;
 		height: 64px;
-		background-image: url(../img/like-tablet.png);
+		background-image: url('../img/like-tablet.png');
 	}
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .swiper-advantages .quality::before {
+      background-image: url('../img/like-tablet@2x.png');
+      background-size: 62px 64px;
+    }
+  }
 
 	.swiper-advantages .performan::before {
 		position: absolute;
@@ -1469,9 +1484,16 @@ footer .mobile-heading {
     left: 34%;
 		width: 89px;
 		height: 59px;
-		background-image: url(../img/handshake-tablet.png);
+		background-image: url('../img/handshake-tablet.png');
 		opacity: 0.4;
 	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .swiper-advantages .performan::before {
+      background-image: url('../img/handshake-tablet@2x.png');
+      background-size: 89px 59px;
+    }
+  }
 
 	.swiper-advantages .swiper-slide-active.performan::before {
 		opacity: 1;
@@ -1486,6 +1508,13 @@ footer .mobile-heading {
 		height: 69px;
 		background-image: url(../img/settings-tablet.png);
 	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .swiper-advantages .manufacture::before {
+      background-image: url(../img/settings-tablet@2x.png);
+      background-size: 70px 69px;
+    }
+  }
 
 	.about-us .advantages {
 		justify-content: flex-start;
@@ -1724,13 +1753,34 @@ footer .mobile-heading {
     background-image: url('../img/futur-tablet.png');
 	}
 
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .futur {
+      background-image: url('../img/futur-tablet@2x.png');
+      background-size: cover;
+    }
+  }
+
 	.projects .oreol {
 		background-image: url('../img/oreol-tablet.png');
 	}
 
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .oreol {
+      background-image: url('../img/oreol-tablet@2x.png');
+      background-size: 724px auto;
+    }
+  }
+
 	.projects .semeynyi {
 		background-image: url('../img/semeynyi-tablet.png');
 	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .semeynyi {
+      background-image: url('../img/semeynyi-tablet@2x.png');
+      background-size: cover;
+    }
+  }
 
 	.projects .medial {
 		position: relative;
@@ -1738,15 +1788,36 @@ footer .mobile-heading {
 		background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial-tablet.png');
 	}
 
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .medial {
+      background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial-tablet@2x.png');
+      background-size: 724px auto;
+    }
+  }
+
 	.projects .energonatskompani {
 		background-color: #000000;
 		background-image: url('../img/energonatscompani-tablet.png');
 	}
 
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .energonatskompani {
+      background-image: url('../img/energonatskompani-tablet@2x.png');
+      background-size: cover;
+    }
+  }
+
 	.projects .buratino {
 		background-color: #000000;
 		background-image: url('../img/buratino-tablet.png');
 	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .buratino {
+      background-image: url('../img/buratino-tablet@2x.png');
+      background-size: cover;
+    }
+  }
 
 	.projects h2 {
     margin-bottom: 13px;
@@ -2097,16 +2168,37 @@ footer .mobile-heading {
 	}
 
 	.social-button-vk {
-    background-image: url(../img/vk-tablet.png);
+		background-image: url('img/vk-tablet.png');
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.social-button-vk {
+			background-image: url('img/vk-tablet@2x.png');
+			background-size: 22px 14px;
+		}
 	}
 
 	.social-button-tw {
-		background-image: url(../img/tw-tablet.png);
+		background-image: url('img/tw-tablet.png');
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.social-button-tw {
+			background-image: url('img/tw-tablet@2x.png');
+			background-size: 17px 14px;
+		}
 	}
 
 	.social-button-fb {
-		background-image: url(../img/fb-tablet.png);
+		background-image: url('img/fb-tablet.png');
 	}
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .social-button-fb {
+      background-image: url('img/fb-tablet@2x.png');
+      background-size: 9px 16px;
+    }
+  }
 
 	.social-button-vk:hover,
 	.social-button-vk:focus {
@@ -2317,7 +2409,6 @@ footer .mobile-heading {
 		padding-bottom: 29px;
 		margin-bottom: 220px;
 		background-color: #0b1223;
-		background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/background.jpg);
 		background-position: 71% 0;
 		background-repeat: no-repeat;
 		background-size: cover;
