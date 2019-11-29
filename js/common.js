@@ -8,12 +8,12 @@ var swiper = new Swiper('.swiper-advantages', {
   slidesPerView: 'auto',
   autoHeight: true,
   breakpoints :{
-    1169:{
+    1023:{
       loop: true,
       spaceBetween : 10,
       centeredSlides: true,
     },
-    768:{
+    767:{
       spaceBetween: 0,
     }
   }
