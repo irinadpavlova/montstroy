@@ -1586,6 +1586,11 @@ footer .mobile-heading {
 		margin: 0;
 
 		list-style: none;
+		display: none;
+	}
+
+	.services-item-active ul {
+		display: block;
 	}
 
 	.services-item {
@@ -1737,7 +1742,7 @@ footer .mobile-heading {
 		box-sizing: border-box;
 	}
 
-	.services-items-wrapper .services-item:first-child {
+	.services-items-wrapper .services-item-invisible{
 		display: none;
 	}
 
@@ -2639,7 +2644,7 @@ footer .mobile-heading {
 		flex-direction: column;
 		padding: 0;
 		margin: 0;
-		width: 320px;
+		width: 100vw;
 		margin-left: -20px;
 	}
 
@@ -2650,7 +2655,7 @@ footer .mobile-heading {
 	.services-item {
 		padding: 0;
 		margin: 0;
-		width: 320px;
+		width: 100vw;
 	}
 
 	.services-item h3 {
@@ -2665,7 +2670,6 @@ footer .mobile-heading {
 	}
 
 	.services-item-active h3 {
-		width: 320px;
 		font-size: 16px;
 		padding-top: 13px;
     padding-bottom: 13px;
@@ -2673,7 +2677,7 @@ footer .mobile-heading {
 	}
 
 	.services-items-wrapper .services-list {
-		width: 320px;
+		width: 100vw;
 	}
 
 	.services-items-wrapper .services-item,
@@ -2692,11 +2696,11 @@ footer .mobile-heading {
 	}
 
 	.services-list li {
-		width: 320px;
+		width: 100vw;
 	}
 
 	.services-list-item a {
-		width: auto;
+		width: 100vw;
 		min-height: 40px;
 		font-size: 12px;
 		padding-top: 4px;
@@ -2707,7 +2711,7 @@ footer .mobile-heading {
 
 	.services-item a {
     display: block;
-    width: 320px;
+    width: 100vw;
     min-height: 40px;
     box-sizing: border-box;
     padding-top: 5px;
