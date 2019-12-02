@@ -56,7 +56,6 @@
 
 body {
   margin: 0;
-  min-width: 960px;
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 13px;
@@ -538,6 +537,7 @@ footer .mobile-heading {
 
 .projects ul {
 	display: flex;
+	flex-wrap: wrap;
 
   margin: 0;
 	padding: 0;
@@ -546,11 +546,10 @@ footer .mobile-heading {
 
 .projects .projects-item {
 	position: relative;
-	width: 100%;
 	min-height: 290px;
 	box-sizing: border-box;
-	margin-right: 3px;
-	margin-bottom: 3px;
+	margin-right: calc((4/1170)*100%);
+	margin-bottom: 4px;
 	padding-top: 52px;
 	padding-right: 10px;
 	padding-bottom: 10px;
@@ -640,8 +639,10 @@ footer .mobile-heading {
 }
 
 .projects .futur {
+	width: calc((290/1170)*100%);
 	background-image: url('../img/futur.png');
 	background-size: cover;
+	margin-right: calc((3/1170)*100%);
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -652,6 +653,7 @@ footer .mobile-heading {
 }
 
 .projects .oreol {
+	width: calc((290/1170)*100%);
 	background-image: url('../img/oreol.png');
 	background-size: cover;
 }
@@ -664,8 +666,10 @@ footer .mobile-heading {
 }
 
 .projects .semeynyi {
+	width: calc((290/1170)*100%);
 	background-image: url('../img/semeynyi.png');
 	background-size: cover;
+	margin-right: calc((3/1170)*100%);
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -676,6 +680,7 @@ footer .mobile-heading {
 }
 
 .projects .medial {
+	width: calc((290/1170)*100%);
 	position: relative;
 	background-color: #292929;
 	background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial.png');
@@ -690,6 +695,7 @@ footer .mobile-heading {
 }
 
 .projects .energonatskompani {
+	width: calc((583/1170)*100%);
 	background-color: #000000;
 	background-image: url('../img/energonatskompani.png');
 	background-size: cover;
@@ -703,6 +709,7 @@ footer .mobile-heading {
 }
 
 .projects .buratino {
+	width: calc((583/1170)*100%);
 	background-color: #000000;
 	background-image: url('../img/buratino.png');
 	background-size: cover;
@@ -773,9 +780,7 @@ footer .mobile-heading {
 }
 
 .partners .swiper-button-next:hover,
-.partners .swiper-button-prev:hover,
-.partners .swiper-button-prev:focus,
-.partners .swiper-button-next:focus {
+.partners .swiper-button-prev:hover {
 	background-color: rgba(0, 255, 216, 0.3);
 }
 
@@ -1818,7 +1823,7 @@ footer .mobile-heading {
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .projects .medial {
-      background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0.7) 100%), url('../img/medial-tablet@2x.png');
+      background-image: url('../img/medial-tablet@2x.png');
       background-size: 724px auto;
     }
   }
@@ -2779,7 +2784,7 @@ footer .mobile-heading {
     min-height: 100px;
     background-position: 0 0;
     background-repeat: no-repeat;
-		background-size: 280px 100px;
+		background-size: cover;
     padding: 0;
     margin: 0;
     padding-top: 37px;
@@ -2796,6 +2801,11 @@ footer .mobile-heading {
 	.projects-row:nth-child(3) .projects-item {
 		padding: 0;
 		padding-top: 23px;
+	}
+
+	.projects .projects-row {
+		width: 100vw;
+		margin-left: -20px;
 	}
 
 	.partners .partners-header-tablet {

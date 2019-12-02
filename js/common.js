@@ -36,6 +36,7 @@ var swiper = new Swiper('.swiper-partners', {
     1169:{
       spaceBetween : 10,
       centeredSlides: true,
+      slidesPerView: 3,
     },
     768:{
       spaceBetween: 0,
