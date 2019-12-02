@@ -43,33 +43,6 @@ var swiper = new Swiper('.swiper-partners', {
   }
 });
 
-// var hamburger = document.querySelector(".burger-menu");
-// var menu = document.querySelector(".main-navigation");
-// var heading1 = document.querySelector(".services-item-1");
-// var heading2 = document.querySelector(".services-item-2");
-// var heading3 = document.querySelector(".services-item-3");
-// var heading4 = document.querySelector(".services-item-4");
-// var heading5 = document.querySelector(".services-item-5");
-// var heading6 = document.querySelector(".services-item-6");
-// var service1 = document.querySelector(".service-1");
-// var service2 = document.querySelector(".service-2");
-// var service3 = document.querySelector(".service-3");
-// var service4 = document.querySelector(".service-4");
-// var service5 = document.querySelector(".service-5");
-// var service6 = document.querySelector(".service-6");
-// var list1 = document.querySelector(".services-list-1");
-// var list2 = document.querySelector(".services-list-2");
-// var list3 = document.querySelector(".services-list-3");
-// var list4 = document.querySelector(".services-list-4");
-// var list5 = document.querySelector(".services-list-5");
-// var list6 = document.querySelector(".services-list-6");
-
-// menu.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   navigation.classList.toggle("modal-show");
-// });
-
-
 var hamburger = document.querySelector('.burger-menu');
 var menu = document.querySelector('.main-navigation');
 
@@ -106,39 +79,37 @@ Array.from(panelItem).forEach(function(item, i, panelItem) {
     this.classList.toggle('services-item-active');
   });
 });
-//
-// heading1.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list1.classList.toggle("modal-show");
-//   service1.classList.toggle("services-item-active");
-// });
-//
-// heading2.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list2.classList.toggle("modal-show");
-//   service2.classList.toggle("services-item-active");
-// });
-//
-// heading3.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list3.classList.toggle("modal-show");
-//   service3.classList.toggle("services-item-active");
-// });
-//
-// heading4.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list4.classList.toggle("modal-show");
-//   service4.classList.toggle("services-item-active");
-// });
-//
-// heading5.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list5.classList.toggle("modal-show");
-//   service5.classList.toggle("services-item-active");
-// });
-//
-// heading6.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   list6.classList.toggle("modal-show");
-//   service6.classList.toggle("services-item-active");
-// });
+
+// собираем все якоря; устанавливаем время анимации и количество кадров
+const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+      animationTime = 300,
+      framesCount = 20;
+
+anchors.forEach(function(item) {
+  // каждому якорю присваиваем обработчик события
+  item.addEventListener('click', function(e) {
+    // убираем стандартное поведение
+    e.preventDefault();
+
+    // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+
+    // запускаем интервал, в котором
+    let scroller = setInterval(function() {
+      // считаем на сколько скроллить за 1 такт
+      let scrollBy = coordY / framesCount;
+
+      // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
+      // и дно страницы не достигнуто
+      if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+        // то скроллим на к-во пикселей, которое соответствует одному такту
+        window.scrollBy(0, scrollBy);
+      } else {
+        // иначе добираемся до элемента и выходим из интервала
+        window.scrollTo(0, coordY);
+        clearInterval(scroller);
+      }
+    // время интервала равняется частному от времени анимации и к-ва кадров
+    }, animationTime / framesCount);
+  });
+});

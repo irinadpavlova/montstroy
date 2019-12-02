@@ -248,7 +248,7 @@ input[type="radio"].visually-hidden {
 	background-size: cover;
 
   padding-top: 152px;
-	padding-bottom: 30px;
+	padding-bottom: 28px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
 .main-heading {
 	padding: 0;
 	margin: 0;
-	padding-bottom: 23px;
+	padding-bottom: 22px;
 
 	font-family: 'Raleway-Black', Arial, sans-serif;
 	font-size: 72px;
@@ -291,15 +291,14 @@ input[type="radio"].visually-hidden {
 
 .buttons-wrapper {
 	display: flex;
-	flex-wrap: wrap;
 
-	min-width: 622px;
+	width: calc((625/1170)*100%);
 	margin-right: auto;
 	margin-bottom: 100px;
 }
 
 .button-service {
-  margin-right: 21px;
+  margin-right: calc((21/622)*100%);
 
   color: #000000;
   background-color: #00ffd8;
@@ -344,7 +343,7 @@ input[type="radio"].visually-hidden {
 .swiper-advantages .quality {
 	background-image: url('../img/like.png');
   background-repeat: no-repeat;
-  background-position: 65px 20px;
+  background-position: 34% 13%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -357,7 +356,7 @@ input[type="radio"].visually-hidden {
 .swiper-advantages .performan {
 	background-image: url('../img/handshake.png');
   background-repeat: no-repeat;
-  background-position: 77px 35px;
+  background-position: 51% 22%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -370,7 +369,7 @@ input[type="radio"].visually-hidden {
 .swiper-advantages .manufacture {
 	background-image: url('../img/settings.png');
   background-repeat: no-repeat;
-  background-position: 99px 16px;
+  background-position: 54% 10%;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
