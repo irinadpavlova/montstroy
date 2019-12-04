@@ -36,7 +36,6 @@ var swiper = new Swiper('.swiper-partners', {
     1169:{
       spaceBetween : 10,
       centeredSlides: true,
-      slidesPerView: 3,
     },
     768:{
       spaceBetween: 0,
@@ -114,3 +113,9 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+
+var tel = document.getElementById('phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(tel, maskOptions);
