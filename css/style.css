@@ -870,7 +870,7 @@ footer .mobile-heading {
 .write-us h2 {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 
 	color: #000000;
 	font-family: 'Raleway-Black', Arial, sans-serif;
@@ -911,7 +911,7 @@ footer .mobile-heading {
 .write .policy {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 37px;
+	margin-bottom: 40px;
 
 	color: #000000;
 	font-size: 12px;
@@ -1152,7 +1152,7 @@ footer .mobile-heading {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 25.92px;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
 }
 
 .footer-address a {
@@ -2491,9 +2491,17 @@ footer .mobile-heading {
 		padding-bottom: 29px;
 		margin-bottom: 220px;
 		background-color: #0b1223;
-		background-position: 71% 0;
+		background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/bg-mobile.jpg);
+		background-position: 0 0;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.about-us .about-us-wrapper {
+			background-image: linear-gradient(to top, #0d0d0d 0%, rgba(13, 13, 13, 0) 100%), url(../img/bg-mobile@2x.jpg);
+			background-size: cover;
+		}
 	}
 
 	.about-us .main-heading {
@@ -2542,10 +2550,14 @@ footer .mobile-heading {
 	.buttons-wrapper {
     display: flex;
 		flex-direction: column;
-		min-width: 280px;
-    width: auto;
-		padding-left: 0;
+    width: 100%;
+		padding: 0;
+		margin: 0;
     margin-bottom: 23px;
+	}
+
+	.buttons-wrapper .button {
+		width: 100%;
 	}
 
 	.button-service {
@@ -2844,7 +2856,69 @@ footer .mobile-heading {
 	}
 
 	.projects .buratino {
-		background-image: url(../img/buratino.png);
+		background-image: url(../img/buratino-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .buratino {
+      background-image: url(../img/buratino-mobile@2x.png);
+      background-size: cover;
+		}
+	}
+
+	.projects .futur {
+		background-image: url(../img/futur-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .futur {
+      background-image: url(../img/futur-mobile@2x.png);
+      background-size: cover;
+		}
+	}
+
+	.projects .oreol {
+		background-image: url(../img/oreol-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .projects .oreol {
+      background-image: url(../img/oreol-mobile@2x.png);
+      background-size: cover;
+		}
+	}
+
+	.projects .semeynyi {
+		background-image: url(../img/semeynyi-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.projects .semeynyi {
+			background-image: url(../img/semeynyi-mobile@2x.png);
+			background-size: cover;
+		}
+	}
+
+	.projects .medial {
+		background-image: url(../img/medial-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.projects .medial {
+			background-image: url(../img/medial-mobile@2x.png);
+			background-size: cover;
+		}
+	}
+
+	.projects .energonatskompani {
+		background-image: url(../img/energonatskompani-mobile.png);
+	}
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		.projects .energonatskompani {
+			background-image: url(../img/energonatskompani-mobile@2x.png);
+			background-size: cover;
+		}
 	}
 
 	.projects-row:nth-child(3) .projects-item {
@@ -3256,13 +3330,13 @@ footer .mobile-heading {
 	}
 
 	.social-button-vk {
-	  background-image: url("../img/icon-vk.png");
+	  background-image: url("../img/vk-mobile.png");
 		background-size: 40px 24px;
 	}
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .social-button-vk {
-      background-image: url('../img/icon-vk@2x.png');
+      background-image: url('../img/vk-mobile@2x.png');
       background-size: 40px 24px;
     }
   }
@@ -3274,13 +3348,13 @@ footer .mobile-heading {
 	}
 
 	.social-button-tw {
-	  background-image: url("../img/icon-tw.png");
+	  background-image: url("../img/tw-mobile.png");
 		background-size: 31px 26px;
 	}
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .social-button-tw {
-      background-image: url('../img/icon-tw@2x.png');
+      background-image: url('../img/tw-mobile@2x.png');
       background-size: 31px 26px;
     }
   }
@@ -3292,14 +3366,14 @@ footer .mobile-heading {
 	}
 
 	.social-button-fb {
-	  background-image: url("../img/icon-fb.png");
+	  background-image: url("../img/fb-mobile.png");
 		background-size: 15px 29px;
 		background-position: 44% 40%;
 	}
 
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .social-button-fb {
-      background-image: url('../img/icon-fb@2x.png');
+      background-image: url('../img/fb-mobile@2x.png');
       background-size: 15px 29px;
     }
   }
